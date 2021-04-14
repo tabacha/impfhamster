@@ -189,7 +189,7 @@ var jsonData = $.ajax({
       },
     });
   } // for
-
+/*
   var $a_name = $("<a>").attr("name", "DE");
   var $h2 = $("<h2>").text("Deutschland");
   $a_name.append($h2);
@@ -239,17 +239,9 @@ var jsonData = $.ajax({
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        /*scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    ],
-  },
-*/
+
       },
     });
   }); // foreach
+  */
 }); // ajax

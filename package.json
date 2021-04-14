@@ -5,6 +5,7 @@
   "main": "impfhamster.js",
   "dependencies": {
     "chart.js": "^2.9.4",
+    "github-fork-ribbon-css": "^0.2.3",
     "jquery": "^3.6.0"
   },
   "devDependencies": {},

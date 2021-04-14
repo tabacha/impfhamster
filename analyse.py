@@ -23,7 +23,7 @@ def add_impfstofflieferung(date,impfstoff,bundesland,delta):
         #print(impfstoff)
 
     if date in impfmenge[bundesland][impfstoff]:
-        sys.exit('Doppeltes Datum')
+        print('Doppeltes Datum %s %s %s' % (date, impfstoff, bundesland))
     sum_impfmenge[bundesland][impfstoff] = sum_impfmenge[bundesland][impfstoff] + delta
     impfmenge[bundesland][impfstoff][date] = sum_impfmenge[bundesland][impfstoff]
 

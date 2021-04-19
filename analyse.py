@@ -46,7 +46,8 @@ if (headline != 'date\timpfstoff\tregion\tdosen'):
 for line in f.readlines():
     (date,impfstoff,bundesland,delta)=line.rstrip().split('\t')
     bundesland=bundesland.replace('DE-','')
-    add_impfstofflieferung(date,impfstoff,bundesland,int(delta))
+    if (bundesland!="BUND"):
+        add_impfstofflieferung(date,impfstoff,bundesland,int(delta))
 
 f.close()
 IMPFUNG_FILE='all.csv'
